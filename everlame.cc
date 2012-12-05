@@ -54,7 +54,7 @@ bool check(StringWrap s) {
 }
 
 void print_solution(std::stringstream &tokenizer, bool &has_token) {
-  if (tokenizer.str().size()) {
+  if (has_token) {
     std::string token = tokenizer.str();
     std::cout << token << " " << (check(token) ? "VALID" : "INVALID")
               << "\n";
